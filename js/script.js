@@ -38,4 +38,13 @@ const workerInfo=
     },
 ];
 
-console.log(workerInfo);
+const output= document.getElementById('dom-output');
+
+for (let i= 0; i< workerInfo.length; i++) {
+    output.innerHTML +=`
+    nome -> ${workerInfo[i].name}
+    ruolo -> ${workerInfo[i].role} 
+    photo -> ${workerInfo[i].photo}
+    `;
+    
+}
