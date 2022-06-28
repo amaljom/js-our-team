@@ -10,7 +10,7 @@ const workerInfo=
     {
         name: 'Angela Caroll',
         role:'Chief Editor',
-        photo:' angela-caroll-chief-editor.jpg'
+        photo:'angela-caroll-chief-editor.jpg'
     },
     // ? terzo
     {
@@ -28,7 +28,7 @@ const workerInfo=
     {
         name: 'Scott Estrada',
         role:'Developer',
-        photo:' scott-estrada-developer.jpg'
+        photo:'scott-estrada-developer.jpg'
     },
     // ? sesto
     {
@@ -44,7 +44,7 @@ for (let i= 0; i< workerInfo.length; i++) {
     output.innerHTML +=`
     nome -> ${workerInfo[i].name}
     ruolo -> ${workerInfo[i].role} 
-    photo -> ${workerInfo[i].photo}
+    <img src="./img/${workerInfo[i].photo}" alt="NON TROVATO">
     `;
     
 }
