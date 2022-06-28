@@ -33,7 +33,7 @@ const workerInfo=
     // ? sesto
     {
     name: 'Barbara Ramos',
-    role:'Graphic Designer',
+    role:'Designer',
     photo:'barbara-ramos-graphic-designer.jpg'
     },
 ];
@@ -42,9 +42,14 @@ const output= document.getElementById('dom-output');
 
 for (let i= 0; i< workerInfo.length; i++) {
     output.innerHTML +=`
-    nome -> ${workerInfo[i].name}
-    ruolo -> ${workerInfo[i].role} 
-    <img src="./img/${workerInfo[i].photo}" alt="NON TROVATO">
-    `;
+    <div class="d-flex justify-content-center mt-4 space">
+        <img class="round" src="./img/${workerInfo[i].photo}" alt="NON TROVATO">
+        
+        <div class="ms-4">
+            <p> nome : ${workerInfo[i].name} </p>
+            <p>ruolo : ${workerInfo[i].role} </p>
+        </div>
+        
+    </div>`;
     
 }
